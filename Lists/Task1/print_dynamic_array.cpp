@@ -20,7 +20,7 @@ int main()
     SetConsoleOutputCP(1251);
     
     int fact_size = 0, actual_size = 0;
-    //char marked_element = '_';
+    
     try {
         std::cout << "¬ведите фактичеcкий размер массива: ";
         std::cin >> fact_size;
@@ -41,7 +41,7 @@ int main()
         std::cin >> arr[i];
     }
     print_dynamic_array(arr, actual_size, fact_size);
-
+    delete[] arr;
     return 0;
 }
 
